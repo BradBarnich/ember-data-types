@@ -122,11 +122,11 @@ export namespace DS {
     function belongsTo<K extends keyof ModelRegistry>(
         modelName: K,
         options: RelationshipOptions<ModelRegistry[K]> & Sync,
-    ): ModelRegistry[K] | null & Function;
+    ): Function;
     function belongsTo<K extends keyof ModelRegistry>(
         modelName: K,
         options?: RelationshipOptions<ModelRegistry[K]> & Async,
-    ): AsyncBelongsTo<ModelRegistry[K] | null> & Function;
+    ): Function;
     type AsyncHasMany<T extends Model> = PromiseManyArray<T>;
     type SyncHasMany<T extends Model> = ManyArray<T>;
     /**
@@ -136,11 +136,11 @@ export namespace DS {
     function hasMany<K extends keyof ModelRegistry>(
         type: K,
         options: RelationshipOptions<ModelRegistry[K]> & Sync,
-    ): SyncHasMany<ModelRegistry[K]> & Function;
+    ): Function;
     function hasMany<K extends keyof ModelRegistry>(
         type: K,
         options?: RelationshipOptions<ModelRegistry[K]> & Async,
-    ): AsyncHasMany<ModelRegistry[K]> & Function;
+    ): Function;
     /**
      * This method normalizes a modelName into the format Ember Data uses
      * internally.
@@ -170,7 +170,7 @@ export namespace DS {
     function attr<K extends keyof TransformRegistry>(
         type: K,
         options?: AttrOptions<TransformType<K>>,
-    ): TransformType<K> & Function;
+    ): Function;
     function attr(options?: AttrOptions<any>): any;
     function attr(target: any, propertyKey: string): void;
 
