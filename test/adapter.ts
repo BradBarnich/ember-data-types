@@ -1,7 +1,8 @@
+import Service from '@ember/service';
 import Ember from 'ember';
 import DS, { ModelSchema } from 'ember-data';
 
-class Session extends Ember.Service {}
+class Session extends Service {}
 declare module '@ember/service' {
     interface Registry {
         session: Session;
