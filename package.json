@@ -1,0 +1,59 @@
+{
+    "name": "@types/ember-data",
+    "version": "5.0.0",
+    "description": "TypeScript definitions for ember-data",
+    "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ember-data",
+    "license": "MIT",
+    "contributors": [
+        {
+            "name": "Derek Wickern",
+            "url": "https://github.com/dwickern",
+            "githubUsername": "dwickern"
+        },
+        {
+            "name": "Mike North",
+            "url": "https://github.com/mike-north",
+            "githubUsername": "mike-north"
+        },
+        {
+            "name": "Chris Krycho",
+            "url": "https://github.com/chriskrycho",
+            "githubUsername": "chriskrycho"
+        },
+        {
+            "name": "James C. Davis",
+            "url": "https://github.com/jamescdavis",
+            "githubUsername": "jamescdavis"
+        },
+        {
+            "name": "Chris Thoburn",
+            "url": "https://github.com/runspired",
+            "githubUsername": "runspired"
+        },
+        {
+            "name": "Peter Wagenet",
+            "url": "https://github.com/wagenet",
+            "githubUsername": "wagenet"
+        },
+        {
+            "name": "Krystan HuffMenne",
+            "url": "https://github.com/gitKrystan",
+            "githubUsername": "gitKrystan"
+        }
+    ],
+    "main": "",
+    "types": "index.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/ember-data"
+    },
+    "scripts": {},
+    "devDependencies": {
+        "@types/rsvp": "^4.0.4",
+        "ember-source": "^5.1.2",
+        "typescript": "^5.1.6"
+    },
+    "typesPublisherContentHash": "5ca985299d24b85417d05e9bab9fd11754cb17e55bd9f360fa07013f1f24dde6",
+    "typeScriptVersion": "4.4"
+}
